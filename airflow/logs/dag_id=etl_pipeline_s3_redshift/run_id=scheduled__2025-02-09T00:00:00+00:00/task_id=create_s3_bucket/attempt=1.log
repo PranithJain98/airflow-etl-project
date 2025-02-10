@@ -1,0 +1,84 @@
+[2025-02-09T19:29:26.661-0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-09T19:29:26.665-0700] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: etl_pipeline_s3_redshift.create_s3_bucket scheduled__2025-02-09T00:00:00+00:00 [queued]>
+[2025-02-09T19:29:26.667-0700] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: etl_pipeline_s3_redshift.create_s3_bucket scheduled__2025-02-09T00:00:00+00:00 [queued]>
+[2025-02-09T19:29:26.668-0700] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2025-02-09T19:29:26.672-0700] {taskinstance.py:2889} INFO - Executing <Task(S3CreateBucketOperator): create_s3_bucket> on 2025-02-09 00:00:00+00:00
+[2025-02-09T19:29:26.676-0700] {standard_task_runner.py:72} INFO - Started process 26336 to run task
+[2025-02-09T19:29:26.679-0700] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'etl_pipeline_s3_redshift', 'create_s3_bucket', 'scheduled__2025-02-09T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/etl_pipeline.py', '--cfg-path', '/var/folders/34/m8qmq9t56731p7j58zz_7yvm0000gn/T/tmpe0lv9nr4']
+[2025-02-09T19:29:26.680-0700] {standard_task_runner.py:105} INFO - Job 6: Subtask create_s3_bucket
+[2025-02-09T19:29:26.699-0700] {task_command.py:467} INFO - Running <TaskInstance: etl_pipeline_s3_redshift.create_s3_bucket scheduled__2025-02-09T00:00:00+00:00 [running]> on host praniths-macbook-pro.local
+[2025-02-09T19:29:26.724-0700] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='etl_pipeline_s3_redshift' AIRFLOW_CTX_TASK_ID='create_s3_bucket' AIRFLOW_CTX_EXECUTION_DATE='2025-02-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-09T00:00:00+00:00'
+[2025-02-09T19:29:26.725-0700] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-02-09T19:29:26.726-0700] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-02-09T19:29:26.726-0700] {logging_mixin.py:190} INFO - Current task name:create_s3_bucket state:running start_date:2025-02-10 02:29:26.665597+00:00
+[2025-02-09T19:29:26.726-0700] {logging_mixin.py:190} INFO - Dag name:etl_pipeline_s3_redshift and current dag run status:running
+[2025-02-09T19:29:26.726-0700] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-09T19:29:26.729-0700] {base.py:84} INFO - Retrieving connection 'aws_default'
+[2025-02-09T19:39:24.198-0700] {job.py:229} INFO - Heartbeat recovered after 70.03 seconds
+[2025-02-09T19:40:16.563-0700] {job.py:229} INFO - Heartbeat recovered after 47.32 seconds
+[2025-02-09T19:44:01.254-0700] {job.py:229} INFO - Heartbeat recovered after 89.14 seconds
+[2025-02-09T19:45:10.805-0700] {job.py:229} INFO - Heartbeat recovered after 64.51 seconds
+[2025-02-09T19:48:25.292-0700] {job.py:229} INFO - Heartbeat recovered after 63.82 seconds
+[2025-02-09T19:54:48.222-0700] {job.py:229} INFO - Heartbeat recovered after 372.91 seconds
+[2025-02-09T20:12:39.553-0700] {job.py:229} INFO - Heartbeat recovered after 11.14 seconds
+[2025-02-09T20:15:16.462-0700] {job.py:229} INFO - Heartbeat recovered after 21.33 seconds
+[2025-02-09T20:17:55.072-0700] {job.py:229} INFO - Heartbeat recovered after 17.94 seconds
+[2025-02-09T21:16:34.468-0700] {job.py:229} INFO - Heartbeat recovered after 11.20 seconds
+[2025-02-09T21:24:00.831-0700] {job.py:229} INFO - Heartbeat recovered after 310.78 seconds
+[2025-02-09T21:28:20.465-0700] {job.py:229} INFO - Heartbeat recovered after 199.19 seconds
+[2025-02-09T21:41:07.935-0700] {job.py:229} INFO - Heartbeat recovered after 686.93 seconds
+[2025-02-09T21:43:51.367-0700] {job.py:229} INFO - Heartbeat recovered after 56.17 seconds
+[2025-02-09T21:45:49.481-0700] {job.py:229} INFO - Heartbeat recovered after 52.67 seconds
+[2025-02-09T21:47:33.183-0700] {job.py:229} INFO - Heartbeat recovered after 13.26 seconds
+[2025-02-09T21:49:08.104-0700] {job.py:229} INFO - Heartbeat recovered after 24.50 seconds
+[2025-02-09T21:51:57.430-0700] {job.py:229} INFO - Heartbeat recovered after 13.37 seconds
+[2025-02-09T21:54:14.307-0700] {job.py:229} INFO - Heartbeat recovered after 11.21 seconds
+[2025-02-09T21:56:01.955-0700] {job.py:229} INFO - Heartbeat recovered after 12.14 seconds
+[2025-02-09T22:26:20.914-0700] {job.py:229} INFO - Heartbeat recovered after 64.86 seconds
+[2025-02-09T22:45:46.450-0700] {job.py:229} INFO - Heartbeat recovered after 1030.13 seconds
+[2025-02-09T22:53:53.126-0700] {job.py:229} INFO - Heartbeat recovered after 446.51 seconds
+[2025-02-09T23:35:47.700-0700] {job.py:229} INFO - Heartbeat recovered after 17.36 seconds
+[2025-02-09T23:46:36.763-0700] {job.py:229} INFO - Heartbeat recovered after 15.82 seconds
+[2025-02-10T00:03:15.105-0700] {job.py:229} INFO - Heartbeat recovered after 998.34 seconds
+[2025-02-10T00:21:55.506-0700] {job.py:229} INFO - Heartbeat recovered after 1039.93 seconds
+[2025-02-10T00:27:17.122-0700] {job.py:229} INFO - Heartbeat recovered after 321.62 seconds
+[2025-02-10T00:28:22.005-0700] {job.py:229} INFO - Heartbeat recovered after 64.88 seconds
+[2025-02-10T00:46:13.596-0700] {job.py:229} INFO - Heartbeat recovered after 976.10 seconds
+[2025-02-10T01:02:04.358-0700] {job.py:229} INFO - Heartbeat recovered after 950.76 seconds
+[2025-02-10T01:17:22.243-0700] {job.py:229} INFO - Heartbeat recovered after 917.89 seconds
+[2025-02-10T01:34:55.912-0700] {job.py:229} INFO - Heartbeat recovered after 1048.69 seconds
+[2025-02-10T01:47:38.635-0700] {job.py:229} INFO - Heartbeat recovered after 762.72 seconds
+[2025-02-10T02:03:50.654-0700] {job.py:229} INFO - Heartbeat recovered after 956.93 seconds
+[2025-02-10T02:22:41.933-0700] {job.py:229} INFO - Heartbeat recovered after 1050.83 seconds
+[2025-02-10T02:39:29.684-0700] {job.py:229} INFO - Heartbeat recovered after 1007.75 seconds
+[2025-02-10T02:48:36.441-0700] {job.py:229} INFO - Heartbeat recovered after 546.76 seconds
+[2025-02-10T03:05:01.688-0700] {job.py:229} INFO - Heartbeat recovered after 980.13 seconds
+[2025-02-10T03:20:46.769-0700] {job.py:229} INFO - Heartbeat recovered after 919.94 seconds
+[2025-02-10T03:38:10.056-0700] {job.py:229} INFO - Heartbeat recovered after 967.84 seconds
+[2025-02-10T03:49:35.855-0700] {job.py:229} INFO - Heartbeat recovered after 685.80 seconds
+[2025-02-10T04:06:55.165-0700] {job.py:229} INFO - Heartbeat recovered after 1034.30 seconds
+[2025-02-10T04:23:13.301-0700] {job.py:229} INFO - Heartbeat recovered after 963.04 seconds
+[2025-02-10T04:40:26.608-0700] {job.py:229} INFO - Heartbeat recovered after 952.88 seconds
+[2025-02-10T04:50:36.404-0700] {job.py:229} INFO - Heartbeat recovered after 609.80 seconds
+[2025-02-10T05:08:13.041-0700] {job.py:229} INFO - Heartbeat recovered after 1051.58 seconds
+[2025-02-10T05:24:39.017-0700] {job.py:229} INFO - Heartbeat recovered after 970.92 seconds
+[2025-02-10T05:41:19.156-0700] {job.py:229} INFO - Heartbeat recovered after 985.01 seconds
+[2025-02-10T05:42:11.062-0700] {job.py:229} INFO - Heartbeat recovered after 51.91 seconds
+[2025-02-10T05:51:38.871-0700] {job.py:229} INFO - Heartbeat recovered after 557.73 seconds
+[2025-02-10T06:07:17.476-0700] {job.py:229} INFO - Heartbeat recovered after 938.61 seconds
+[2025-02-10T06:24:56.046-0700] {job.py:229} INFO - Heartbeat recovered after 1058.57 seconds
+[2025-02-10T06:42:30.754-0700] {job.py:229} INFO - Heartbeat recovered after 1054.71 seconds
+[2025-02-10T06:52:35.560-0700] {job.py:229} INFO - Heartbeat recovered after 604.81 seconds
+[2025-02-10T07:10:11.237-0700] {job.py:229} INFO - Heartbeat recovered after 1050.67 seconds
+[2025-02-10T07:25:34.994-0700] {job.py:229} INFO - Heartbeat recovered after 908.72 seconds
+[2025-02-10T07:42:45.569-0700] {job.py:229} INFO - Heartbeat recovered after 990.30 seconds
+[2025-02-10T07:53:36.864-0700] {job.py:229} INFO - Heartbeat recovered after 611.10 seconds
+[2025-02-10T08:11:07.098-0700] {job.py:229} INFO - Heartbeat recovered after 1010.05 seconds
+[2025-02-10T08:18:04.251-0700] {job.py:229} INFO - Heartbeat recovered after 377.01 seconds
+[2025-02-10T08:21:05.059-0700] {local_task_job_runner.py:127} ERROR - Received SIGTERM. Terminating subprocesses
+[2025-02-10T08:21:05.069-0700] {process_utils.py:132} INFO - Sending 15 to group 26336. PIDs of all processes in the group: [26336]
+[2025-02-10T08:21:05.071-0700] {process_utils.py:87} INFO - Sending the signal 15 to group 26336
+[2025-02-10T08:21:07.264-0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-10T08:21:07.267-0700] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: etl_pipeline_s3_redshift.create_s3_bucket scheduled__2025-02-09T00:00:00+00:00 [running]>, dependency 'Task Instance Not Running' FAILED: Task is in the running state
+[2025-02-10T08:21:07.269-0700] {taskinstance.py:2603} INFO - Dependencies not met for <TaskInstance: etl_pipeline_s3_redshift.create_s3_bucket scheduled__2025-02-09T00:00:00+00:00 [running]>, dependency 'Task Instance State' FAILED: Task is in the 'running' state.
+[2025-02-10T08:21:07.270-0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
